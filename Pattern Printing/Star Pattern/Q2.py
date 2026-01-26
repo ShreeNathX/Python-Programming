@@ -8,7 +8,7 @@
 
 n=6
 
-for x in range(n):
-    for y in range(x):
+for i in range(n):
+    for j in range(i):
         print("*", end=" ")
     print()
