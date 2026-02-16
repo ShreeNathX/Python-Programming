@@ -91,5 +91,5 @@ bitwise_operators:
         calculation: |
           0101 → 0010
         result: 2
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 """
