@@ -9,3 +9,9 @@ print(a * 3)
 
 # Membership 
 print(3 in a)
+
+# Useful Functions
+print(len(a))           # Length
+print(min(a))           # Mimimun Value
+print(max(a))           # Maximum Value
+print(sum(a))           # Sum of all elements
