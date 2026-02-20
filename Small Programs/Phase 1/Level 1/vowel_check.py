@@ -1,6 +1,7 @@
 char = input("Enter a character: ")
 vowels = "aeiou"
 consonants = "bcdfghjklmnpqrstvwxyz"
+
 if len(char) == 1:
     if char in vowels:
         print(f'{char} is vowel letter.')
