@@ -1,13 +1,11 @@
-num = int(input("Enter number: "))
+num = int(input("Enter a number: "))
 
 if num < 0:
-    print("Not a perfect square")
+    print("Negative numbers cannot be perfect squares.")
 else:
-    i = 0
-    while i * i <= num:
-        if i * i == num:
-            print("Perfect square")
-            break
-        i += 1
+    root = int(num ** 0.5)
+
+    if root * root == num:
+        print("Perfect square")
     else:
         print("Not a perfect square")
