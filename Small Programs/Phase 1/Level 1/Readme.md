@@ -1,4 +1,4 @@
-# Conditional Programs – Questions
+# Conditional Programs – Questions (Simple Conditions)
 
 1. Take a number and print whether it is positive, negative, or zero.
 
