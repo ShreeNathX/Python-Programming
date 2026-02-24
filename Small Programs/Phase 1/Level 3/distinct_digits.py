@@ -1,17 +1,14 @@
-num_1 = input("Enter first digit: ")
-num_2 = input("Enter second digit: ")
-num_3 = input("Enter third digit: ")
+num = int(input("Enter three digit number: "))
 
+# digit count
+string = str(abs(num))              # Convert number to string and abs remove symbols
+digits = len(string)
 
-if num_1.isdigit() and num_2.isdigit() and num_3.isdigit():
-    if len(num_1) == 1 and len(num_2) == 1 and len(num_3) == 1:
-        num_1, num_2, num_3 = int(num_1), int(num_2), int(num_3)
-        # Convert to integers for comparison
-        if num_1 != num_2 and num_2 != num_3 and num_1 != num_3:
-            print(f"{num_1}, {num_2}, and {num_3} are distinct.")
-        else:
-            print("Not distinct.")
+if digits <= 3 and digits > 0:
+    if string[0] != string[1] != string[2]:
+        print('All three digits are distinct.')
     else:
-        print("Please provide only one digit.")
+        print('Not distinct.')
 else:
-    print("Invalid input. Please enter digits only.")
+    print('Please enter three digit number.')
+    
