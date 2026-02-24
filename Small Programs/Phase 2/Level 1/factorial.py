@@ -7,3 +7,5 @@ elif n > 1:
     for _ in range(n, 0, -1):
         fac *= _
     print(fac)
+else:
+    print("Invalid number.")
