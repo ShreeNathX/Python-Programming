@@ -1,18 +1,15 @@
-num_1 = input("Enter first digit: ")
-num_2 = input("Enter second digit: ")
-num_3 = input("Enter third digit: ")
+num = int(input("Enter three digit number: "))
 
-if num_1.isdigit() and num_2.isdigit() and num_3.isdigit():
-    if len(num_1) == 1 and len(num_2) == 1 and len(num_3) == 1:
-        num_1, num_2, num_3 = int(num_1), int(num_2), int(num_3)
+# Digit count
+string = str(abs(num))
+digits = len(string)
 
-        if num_2 > num_1 and num_2 > num_3:
-            print(f"Middle digit {num_2} is greatest.")
-        elif num_2 < num_1 and num_2 < num_3:
-            print(f"Middle digit {num_2} is smallest.")
-        else:
-            print(f'Neither.')
+if digits > 0 and digits <= 3:
+    if string[1] > string[0] and string[1] > string[2]:
+        print("Middle digit is largest.")
+    elif string[1] < string[0] and string[1] < string[2]:
+        print("Middle digit is smallest.")
     else:
-        print("Please provide only one digit.")
+        print("Middle digit is neither largest nor smallest.")
 else:
-    print("Invalid input. Please enter digits only.")
+    print("Please enter three digit number.")
