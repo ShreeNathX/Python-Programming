@@ -14,7 +14,7 @@
 
 7. Take three numbers and print the largest.
 
-8. Take a temperature value and print “Cold”, “Warm”, or “Hot” using range conditions
+8. Take a temperature value and print “Cold”, “Warm”, or “Hot” using range conditions.
 
 9. Take a character and check if it is a vowel or consonant.
 
