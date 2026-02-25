@@ -2,7 +2,7 @@ x = int(input("Enter first side: "))
 y = int(input("Enter second side: "))
 z = int(input("Enter third side: "))
 
-if x > 0 and y > 0 and z > 0:
+if x > 0 and y > 0 and z > 0 and (x + y > z and y + z > x and z + x > y):
     if x == y and y == z:
         print("Equilateral triangle.")
     elif x == y or y == z or z == x:
