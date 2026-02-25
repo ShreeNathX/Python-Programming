@@ -18,4 +18,4 @@
 
 9. Take a day number (1–7) and print the corresponding day name.
 
-10. Take a month number (1–12) and print the number of days in that month (ignore leap years).
+10. Take a month number (1–12) and print the number of days in that month (ignore leap years)
