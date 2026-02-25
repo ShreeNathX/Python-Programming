@@ -1,4 +1,4 @@
-char = input("Enter only one character: ")
+char = input("Enter only one character: ").lower()
 
 a_m = "abcdefghijklm"
 n_z = "nopqrstuvwxyz"
