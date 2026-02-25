@@ -4,11 +4,11 @@ lower = "abcdefghijklmnopqrstuvwxyz"
 digit = "1234567890"
 
 if len(char) == 1:
-    if char is upper:
+    if char in upper:
         print(f'Uppercase character.')
-    elif char is lower:
+    elif char in lower:
         print(f'Lowercase character.')
-    elif char is digit:
+    elif char in digit:
         print(f'Digit.')
     else:
         print(f'Special character.')
