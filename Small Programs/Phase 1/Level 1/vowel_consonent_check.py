@@ -1,4 +1,4 @@
-char = input("Enter a character: ")
+char = input("Enter a character: ").lower()
 vowels = "aeiou"
 consonants = "bcdfghjklmnpqrstvwxyz"
 
