@@ -1,39 +1,48 @@
-class  node:
-    def __init__(self, data):
-        self.data = data
+class node:
+    def __init__(self):
+        self.data = None
         self.next = None
 
-class linked_list:
-    def __init__ (self):
+class linkedList:
+    def __init__(self):
         self.head = None
+    
+    # if head none then create new node and assign head to it
+    # else traverse to the end of the list and add new node there
+    def insertLISt(self,data):
 
-    def insertlist(self, data):
         if self.head is None:
             self.head = node()
             self.head.data = data
-            self.head.next = None
-        return
-
+            return
+        
         temp = self.head
+
         while temp.next:
             temp = temp.next
         
-        newNode = node()
-        newNode.next = None
-        newNode.data = data
-
-        temp.next = newNode
-        return head
-    
-    def display(self):
+        temp.next = node()
+        temp.next.data = data
+        
+    def displayList(self):
         temp = self.head
-        while self.temp:
-            print(self.temp.data)
-            self.temp = self.temp.next
-    
-    def delete(self):
-        if self.head:
-            self.head = head.next
-            return
-            
 
+        while temp:
+            print(temp.data)
+            print(temp.next)
+            temp = temp.next
+    
+    def  deleteFromBegining(self):
+        if self.head is None:
+            print("List is empty")
+            return
+        
+        self.head = self.head.next
+
+
+obj1 = linkedList()
+obj1.insertLISt(10)
+obj1.insertLISt(20)
+obj1.insertLISt(30)
+obj1.insertLISt(40)
+obj1.displayList()
