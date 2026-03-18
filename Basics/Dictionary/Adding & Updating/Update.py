@@ -7,3 +7,8 @@ d["name"] = "Ram"           # Add the element when empty
 d["name"] = "Hari"          # Over ride the current element when not empty
 
 print(d)
+
+"""
+Output:
+{'name': 'Hari'}
+"""
