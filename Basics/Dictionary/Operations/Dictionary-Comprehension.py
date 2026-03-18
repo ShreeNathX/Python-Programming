@@ -1,0 +1,5 @@
+# Squares
+d = {x: x*x for x in range(5)}
+print(d)
+
+# {0:0, 1:1, 2:4, 3:9, 4:16}
