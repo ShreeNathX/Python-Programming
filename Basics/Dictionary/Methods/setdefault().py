@@ -1,5 +1,4 @@
-d = {"a": 1, "b": 2}
+d = {"a": 1}
 
-print(d.keys())    # dict_keys(['a', 'b'])
-print(d.values())  # dict_values([1, 2])
-print(d.items())   # dict_items([('a',1), ('b',2)])
+d.setdefault("b", 100)   # Adds if not present
+print(d)  # {'a':1, 'b':100}
