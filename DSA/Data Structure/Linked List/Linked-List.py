@@ -1,48 +1,82 @@
-class node:
-    def __init__(self):
-        self.data = None
+class Node:
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
-class linkedList:
+class LinkedList:
     def __init__(self):
         self.head = None
     
-    # if head none then create new node and assign head to it
-    # else traverse to the end of the list and add new node there
-    def insertLISt(self,data):
-
-        if self.head is None:
-            self.head = node()
-            self.head.data = data
+    def insertlist(self, data):
+        newNode = Node(data)
+        if not self.head:
+            self.head = newNode
+        else:
+            temp = self.head
+            while temp.next:
+                temp = temp.next
+            temp.next = newNode
+    
+    def insertAtBeginning(self, data):
+        newNode = Node(data)
+        newNode.next = self.head
+        self.head = newNode
+    
+    def insertAtEnd(self, data):
+        newNode = Node(data)
+        if not self.head:
+            self.head = newNode
             return
-        
         temp = self.head
-
         while temp.next:
             temp = temp.next
-        
-        temp.next = node()
-        temp.next.data = data
-        
-    def displayList(self):
-        temp = self.head
-
-        while temp:
-            print(temp.data)
-            print(temp.next)
-            temp = temp.next
+        temp.next = newNode
     
-    def  deleteFromBegining(self):
-        if self.head is None:
-            print("List is empty")
+    def insertAtPosition(self, pos, data):
+        if pos < 0:
+            print("Invalid Position...")
             return
         
-        self.head = self.head.next
+        newNode = Node(data)
+        
+        # If inserting at beginning
+        if pos == 0:
+            newNode.next = self.head
+            self.head = newNode
+            return
+        
+        temp = self.head
+        count = 0
+        
+        while temp and count < pos - 1:
+            temp = temp.next
+            count += 1
+        
+        if not temp:
+            print("Position out of range...")
+            return
+        
+        newNode.next = temp.next
+        temp.next = newNode
+    
+    def displayList(self):
+        if not self.head:
+            print("Empty List..")
+            return
+        
+        temp = self.head
+        print('Displaying the elements of list...')
+        while temp:
+            print(f'{temp.data}')
+            temp = temp.next
 
 
-obj1 = linkedList()
-obj1.insertLISt(10)
-obj1.insertLISt(20)
-obj1.insertLISt(30)
-obj1.insertLISt(40)
-obj1.displayList()
+# Example usage
+l1 = LinkedList()
+l1.insertlist(10)
+l1.insertlist(20)
+l1.insertlist(30)
+l1.insertAtBeginning(5)
+l1.insertAtPosition(2, 15)
+l1.insertAtEnd(40)
+l1.displayList()
