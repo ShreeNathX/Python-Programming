@@ -14,5 +14,5 @@ Ram
 Sita
 
 
-Note: Declared inside constructor
+Note: Declared inside methods
 """

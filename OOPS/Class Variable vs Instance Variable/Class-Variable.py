@@ -17,5 +17,5 @@ Student name is Ram. College name is Sage University
 Student name is Sita. College name is Sage University
 
 
-Note: Declared inside class but outside constructor
+Note: Declared inside class but outside methods
 """
