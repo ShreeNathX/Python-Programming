@@ -1,5 +1,5 @@
 class student:
-    def __init__(self):             # No pararmeter except for self
+    def __init__(self):             # No parameter except for self
         print("HI...")
     
 
