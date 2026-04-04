@@ -1,0 +1,3 @@
+"""
+Combination of multiple types of inheritance...
+"""
