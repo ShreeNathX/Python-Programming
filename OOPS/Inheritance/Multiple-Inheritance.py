@@ -12,3 +12,7 @@ class C(A, B):
 c = C()                 # Method calling
 c.showA()               # A
 c.showB()               # B
+
+"""
+Note: Multiple Parents --> One child
+"""
