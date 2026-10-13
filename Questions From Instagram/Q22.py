@@ -16,6 +16,12 @@ f = int("100")
 print(e is f)
 print(e == f)
 
+g = int("1000000000")
+h = int("1000000000")
+
+print(g is h)
+print(g == h)
+
 
 
 """
@@ -25,4 +31,7 @@ c is d → True: Python typically reuses cached small integers.
 c == d → True: Both integers have the same value.
 e is f → True (typically): Python caches small integers, including 100, so both may reference the same object.
 e == f → True: Both integers have the same value.
+
+g is h → False: Python typically creates separate objects for large integers converted separately from strings.
+g == h → True: Both integers have the same value.
 """
