@@ -1,3 +1,42 @@
 1. Base Case --> Stop
 2. Recursive call --> Next Step
 
+The recursion flow uses the Stack data structure, specifically the Call Stack.
+
+
+
+For this code:
+def display(string, n):
+    if n == 0:
+        return 
+    display(string, n-1)
+    print(n, string)
+
+
+display("Rahul", 5)
+
+Output:
+1 Rahul
+2 Rahul
+3 Rahul
+4 Rahul
+5 Rahul
+
+
+
+For this code:
+def display(string, n):
+    if n == 0:
+        return 
+    print(n, string)
+    display(string, n-1)
+
+display("Rahul", 5)
+
+
+Output:
+5 Rahul
+4 Rahul
+3 Rahul
+2 Rahul
+1 Rahul
