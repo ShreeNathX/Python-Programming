@@ -19,7 +19,7 @@ Output:
 2
 1
 """
-
+print()
 
 def nums(n):
     if n == 0:
